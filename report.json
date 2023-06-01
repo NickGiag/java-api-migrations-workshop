@@ -1,0 +1,401 @@
+{
+  "individualResults": [
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:01:14.402729400",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "1",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create authors table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors_table.sql",
+          "executionTime": 477
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:08:46.642386",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_author_details_from_books.sql failed\n-------------------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"books\" does not exist\nLocation   : db/migrations/V2_1_0__remove_author_details_from_books.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql)\nLine       : 1\nStatement  : ALTER TABLE Books\r\nDROP COLUMN author,\r\nDROP COLUMN author_email\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": null,
+      "schemaName": "",
+      "migrations": [],
+      "migrationsExecuted": 0,
+      "success": false,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:10:26.459739200",
+      "operation": "migrate",
+      "exception": "Migration V2_1_0__remove_author_details_from_books.sql failed\n-------------------------------------------------------------\nSQL State  : 42P01\nError Code : 0\nMessage    : ERROR: relation \"books\" does not exist\nLocation   : db/migrations/V2_1_0__remove_author_details_from_books.sql (C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql)\nLine       : 1\nStatement  : ALTER TABLE books\r\nDROP COLUMN author,\r\nDROP COLUMN author_email\n",
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.0.0",
+      "targetSchemaVersion": "2.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove author details from books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql",
+          "executionTime": 434
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "executionTime": 500
+        }
+      ],
+      "migrationsExecuted": 2,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:11:28.294652800",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": null,
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1_0_0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2_0_0",
+          "description": "create authors table",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors_table.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2_1_0",
+          "description": "remove author details from books",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2_2_0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "allSchemasEmpty": true,
+      "timestamp": "2023-06-01T12:12:50.304006600",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": null,
+      "targetSchemaVersion": "2.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "executionTime": 445
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "description": "create authors table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors_table.sql",
+          "executionTime": 438
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "description": "remove author details from books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql",
+          "executionTime": 429
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:13:20.657826600",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": "2.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1.0.0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:24.494720Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 445
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2.0.0",
+          "description": "create authors table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:25.878981Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors_table.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 438
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2.1.0",
+          "description": "remove author details from books",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:27.179282Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 429
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2_2_0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T12:13:38.012616800",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "schemaVersion": "2.1.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "1.0.0",
+          "rawVersion": "1.0.0",
+          "description": "initial table creation",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:24.494720Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V1_0_0__initial_table_creation.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 445
+        },
+        {
+          "category": "Versioned",
+          "version": "2.0.0",
+          "rawVersion": "2.0.0",
+          "description": "create authors table",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:25.878981Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_0_0__create_authors_table.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 438
+        },
+        {
+          "category": "Versioned",
+          "version": "2.1.0",
+          "rawVersion": "2.1.0",
+          "description": "remove author details from books",
+          "type": "SQL",
+          "installedOnUTC": "2023-06-01T09:13:27.179282Z",
+          "state": "Success",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_1_0__remove_author_details_from_books.sql",
+          "undoFilepath": "",
+          "installedBy": "qduzwuty",
+          "executionTime": 429
+        },
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "rawVersion": "2_2_0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "installedOnUTC": "",
+          "state": "Pending",
+          "undoable": "No",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "undoFilepath": "",
+          "installedBy": "",
+          "executionTime": 0
+        }
+      ],
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "allSchemasEmpty": false,
+      "timestamp": "2023-06-01T12:14:06.515416700",
+      "operation": "info",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.1.0",
+      "targetSchemaVersion": "2.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "2.2.0",
+          "description": "add foreign key for authors to books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V2_2_0__add_foreign_key_for_authors_to_books.sql",
+          "executionTime": 511
+        }
+      ],
+      "migrationsExecuted": 1,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:14:41.483466",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    },
+    {
+      "initialSchemaVersion": "2.2.0",
+      "targetSchemaVersion": "3.2.0",
+      "schemaName": "",
+      "migrations": [
+        {
+          "category": "Versioned",
+          "version": "3.0.0",
+          "description": "create publishers table",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V3_0_0__create_publishers_table.sql",
+          "executionTime": 434
+        },
+        {
+          "category": "Versioned",
+          "version": "3.1.0",
+          "description": "remove publisher from books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V3_1_0__remove_publisher_from_books.sql",
+          "executionTime": 420
+        },
+        {
+          "category": "Versioned",
+          "version": "3.2.0",
+          "description": "add FK for publishers to books",
+          "type": "SQL",
+          "filepath": "C:\\Users\\Kermit\\Desktop\\Boolean UK\\Java\\java-api-migrations-workshop\\db\\migrations\\V3_2_0__add_FK_for_publishers_to_books.sql",
+          "executionTime": 492
+        }
+      ],
+      "migrationsExecuted": 3,
+      "success": true,
+      "flywayVersion": "9.19.1",
+      "database": "qduzwuty",
+      "warnings": [],
+      "timestamp": "2023-06-01T12:27:51.542796700",
+      "operation": "migrate",
+      "exception": null,
+      "licenseFailed": false
+    }
+  ]
+}
